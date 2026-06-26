@@ -1,0 +1,23 @@
+# Dependências
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.pyc
+target/
+bin/
+obj/
+vendor/
+
+# Build
+dist/
+build/
+*.class
+*.jar
+*.exe
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
