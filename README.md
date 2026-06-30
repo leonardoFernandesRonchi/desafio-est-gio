@@ -53,7 +53,7 @@ Crie um arquivo .env dentro da pasta backend:
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=sua_senha
-DB_NAME=desafio_db
+DB_NAME=banco_agilize
 DB_PORT=3306
 
 PORT=3000
