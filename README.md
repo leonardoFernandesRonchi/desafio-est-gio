@@ -45,6 +45,14 @@ CREATE DATABASE banco_agilize;
 
 ```
 
+## 🛠️ Executando as migrations
+
+Após configurar o banco e o arquivo `.env`, execute:
+
+```bash
+cd backend
+npx sequelize-cli db:migrate
+```
 
 🔐 Configuração do backend (.env)
 
