@@ -41,7 +41,7 @@ Antes de rodar o projeto, você precisa ter instalado:
 Crie o banco no MySQL:
 
 ```sql
-CREATE DATABASE desafio_db;
+CREATE DATABASE banco_agilize;
 
 ```
 
