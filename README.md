@@ -1,61 +1,97 @@
-# Desafio Técnico — Banco 🏦
+# 🚀 Desafio Full Stack (Frontend + Backend)
 
-Bem-vindo(a) ao desafio técnico do **Processo Seletivo Agilize — Estágio em Tecnologia**!
-
-Este desafio avalia sua capacidade de transformar **regras de negócio** em um sistema **fullstack**
-funcional, bem organizado e fácil de executar.
-
-> 📄 **A especificação completa está no arquivo [`ESPECIFICACAO.pdf`](./ESPECIFICACAO.pdf).** Leia-a com atenção antes de começar.
->
-> ⏰ **Prazo:** 2 dias corridos — entrega até **00h de 30/06**.
+Projeto full stack desenvolvido com **Node.js (backend)** e **React (frontend)**, utilizando TypeScript, MySQL e tecnologias modernas.
 
 ---
 
-## 🎯 Resumo
+# 📌 Tecnologias utilizadas
 
-Construa um **Banco** sobre dois tipos de conta (corrente e poupança), respeitando as regras de negócio
-da especificação. A operação **obrigatória** é o **saque**; a **transferência** é **opcional** e conta
-como diferencial.
+## Backend
+- Node.js
+- Express
+- TypeScript
+- Sequelize (ORM)
+- MySQL2
+- dotenv
+- ts-node-dev
 
-A solução deve ter **duas partes que se comunicam**:
-
-- **Backend (API):** expõe uma API HTTP com as operações (toda a regra de negócio fica aqui).
-- **Frontend:** uma interface web que consome a API e permite realizar as operações e ver os resultados.
-
-## 💻 Linguagens aceitas (backend)
-
-`JavaScript (Node.js)` · `TypeScript (Node.js)` · `Python` · `Ruby` · `PHP` · `Go`
-
-> O **frontend** pode usar HTML/CSS/JavaScript, com ou sem framework.
-
----
-
-## 🚀 Como participar
-
-1. Faça um **fork** deste repositório.
-2. Implemente **backend** e **frontend** no fork (backend em uma das linguagens aceitas).
-3. **Preencha o README** do seu fork seguindo o modelo em [`SUBMISSION.md`](./SUBMISSION.md)
-   (linguagem, pré-requisitos e **passo a passo para subir backend e frontend**).
-4. Faça **commits ao longo do desenvolvimento** — evite um único commit gigante no final.
-5. Envie o **link do seu fork** para **calison@agilize.com.br**.
+## Frontend
+- React
+- Vite
+- TypeScript
+- React Router DOM
+- Axios
+- TailwindCSS
 
 ---
 
-## ⚠️ Critério eliminatório
+# ⚙️ Pré-requisitos
 
-> Projetos que **não executarem** seguindo o README — ou cujo README não permita rodar **backend e
-> frontend** — serão **eliminados**. Backend fora das linguagens aceitas também elimina.
->
-> **Teste o passo a passo em uma máquina/pasta limpa antes de enviar.**
+Antes de rodar o projeto, você precisa ter instalado:
+
+- Node.js (versão 18 ou superior)
+- npm ou yarn
+- MySQL
+- Git (opcional)
 
 ---
 
-## ✅ O que será avaliado
+# 🗄️ Configuração do banco de dados
 
-- **Funcionamento** — backend e frontend rodam, se comunicam e cumprem as regras de negócio.
-- **Qualidade do código** — clareza, organização, separação de responsabilidades, sem duplicação.
-- **Processo** — histórico de commits coerente e README claro.
+Crie o banco no MySQL:
 
-Dúvidas: **calison@agilize.com.br**
+```sql
+CREATE DATABASE desafio_db;
 
-Boa sorte! 🍀
+```
+
+
+🔐 Configuração do backend (.env)
+
+Crie um arquivo .env dentro da pasta backend:
+
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=sua_senha
+DB_NAME=desafio_db
+DB_PORT=3306
+
+PORT=3000
+
+
+
+▶️ Como rodar o projeto
+
+📦 Backend
+
+Execute os comandos:
+```
+cd backend
+npm install
+npm run dev
+```
+o Servidor rodará em http://localhost:3000
+
+
+💻 Frontend
+
+Execute os comandos:
+```
+cd frontend
+npm install
+npm run dev
+```
+
+O Servidor rodará em http://localhost:5173
+
+
+
+📡 Rotas da API
+
+```
+GET    /contas
+GET    /contas/:id
+POST   /contas
+POST   /contas/:id/saque
+POST   /transferencia
+```
