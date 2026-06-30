@@ -21,3 +21,5 @@ build/
 .vscode/
 .DS_Store
 *.swp
+
+.env
