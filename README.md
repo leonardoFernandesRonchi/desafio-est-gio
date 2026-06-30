@@ -45,6 +45,21 @@ CREATE DATABASE banco_agilize;
 
 ```
 
+
+
+🔐 Configuração do backend (.env)
+
+Crie um arquivo .env dentro da pasta backend:
+
+```
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=sua_senha
+DB_NAME=banco_agilize
+DB_PORT=3306
+
+PORT=3000
+```
 ## 🛠️ Executando as migrations
 
 Após configurar o banco e o arquivo `.env`, execute:
@@ -54,27 +69,13 @@ cd backend
 npx sequelize-cli db:migrate
 ```
 
-🔐 Configuração do backend (.env)
-
-Crie um arquivo .env dentro da pasta backend:
-
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=sua_senha
-DB_NAME=banco_agilize
-DB_PORT=3306
-
-PORT=3000
-
-
-
 ▶️ Como rodar o projeto
 
 📦 Backend
 
 Execute os comandos:
 ```
-cd backend
+cd backend  
 npm install
 npm run dev
 ```
